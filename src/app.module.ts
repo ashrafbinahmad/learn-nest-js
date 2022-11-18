@@ -8,8 +8,12 @@ import ormconfig from '../ormconfig';
 
 
 @Module({
-  imports: [UsersModule, ProductsModule,TypeOrmModule.forRoot(ormconfig)],
+  imports: [
+    UsersModule,
+    ProductsModule,
+    TypeOrmModule.forRoot(ormconfig)
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }

@@ -6,9 +6,9 @@ import { Product } from './entities/product.entity';
 @Injectable()
 export class ProductsService {
   private products: Product[] = [
-    { id: 1, name: 'Fan', slug: 'fan-1', tags: ['tag1', 'tag2'] },
-    { id: 2, name: 'Bulb', slug: 'bulb-1', tags: ['tag1', 'tag2'] },
-    { id: 3, name: 'Chair', slug: 'chair-1', tags: ['tag1', 'tag2'] },]
+    { id: 1, name: 'Fan', slug: 'fan-1', tags: 'tag1' },
+    { id: 2, name: 'Bulb', slug: 'bulb-1', tags: 'tag1' },
+    { id: 3, name: 'Chair', slug: 'chair-1', tags: 'tag1' },]
 
   create(createProductDto: CreateProductDto) {
     return createProductDto;
